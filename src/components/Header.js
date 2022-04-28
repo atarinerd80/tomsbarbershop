@@ -9,7 +9,7 @@ export class Header extends React.Component {
         <header className='hero-area th-fullpage' style={{ backgroundImage: `url(${backgroundImgPath})` }}>
           <div className='container'>
             <div className='row'>
-              <div className='col-md-12'>
+              <div className='col-md-6'>
                 <img src={logo}/>
               </div>
             </div>
