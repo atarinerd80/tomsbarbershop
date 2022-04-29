@@ -4,7 +4,7 @@ export class TeamMember extends React.Component{
     render(){
         return(
             <>
-                <div className="col-md-4 padding-0">
+                <div className="col-lg-4 padding-0">
                     <div className="team-member">
                         <div className="th-mouse-effect">
                             <div className="team-img">

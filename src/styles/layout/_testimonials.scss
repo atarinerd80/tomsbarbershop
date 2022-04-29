@@ -50,22 +50,13 @@
 	.title {
 		font-size: 25px;
 	}
-	.icon {
-		margin: 50px 0;
-		svg {
-		width: 100px;
-		height: 100px;
-		path {
-			fill: $color-four;
-		}
-		}
-	}
 	.features {
-		ul {
+		table {
 		padding: 0;
 		margin: 20px 0 50px 0;
 		list-style-type: none;
-		li {
+		color: #FFFFFF !important;
+		tr {
 			margin: 10px 0;
 			font-size: 14px;
 			span {

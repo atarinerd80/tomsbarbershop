@@ -17,7 +17,7 @@ export class About extends React.Component {
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-md-6 align-self-center">
+                        <div className="col-lg-6 align-self-center">
                             <div className="content">
                                 <h4 className="inner-title center">Somerset"s Finest Barber Shop &amp; Salon</h4>
                                 <p className="case-description center">
@@ -29,7 +29,7 @@ export class About extends React.Component {
                                 <a className="btn btn-default btn-main" href={ bookingLink } role="button">Book Now</a>
                             </div>
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-md-6 d-none d-lg-block">
                             <div className="img-content">
                                 <img className="img-responsive" src={ aboutImg } alt="" />
                             </div>

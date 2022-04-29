@@ -4,53 +4,20 @@ export class ServiceList extends React.Component {
     render() {
         return(
             <>
-                <div className="row">
-                    <div className="col-md-6">
-                        <div className="card">
-                            <div className="title center">Barbering</div>
-                            <div className="features">
-                                <div className="row">
-                                    <div className="col-md-6">
-                                        <ul>
-                                            {this.props.barberingPriceList.map((service, i) => (
-                                                <li key={'service_' + i}>{service.name}</li>
-                                            ))}
-                                        </ul>
-                                    </div>
-                                    <div className="col-md-6 right">
-                                        <ul>
-                                            {this.props.barberingPriceList.map((service, i) => (
-                                                <li key={'service_' + i}>{(typeof service.price === 'number') ? `$${service.price}` : service.price}</li>
-                                            ))}
-                                        </ul>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-md-6">
-                        <div className="card">
-                            <div className="title center">Cosmetology</div>
-                            <div className="features">
-                                <div className="row">
-                                    <div className="col-md-6">
-                                        <ul>
-                                            {this.props.cosmetologyPriceList.map((service, i) => (
-                                                <li key={'service_' + i}>{service.name}</li>
-                                            ))}
-                                        </ul>
-                                    </div>
-                                    <div className="col-md-6 right">
-                                        <ul>
-                                            {this.props.cosmetologyPriceList.map((service, i) => (
-                                                <li key={'service_' + i}>{(typeof service.price === 'number') ? `$${service.price}` : service.price}</li>
-                                            ))}
-                                        </ul>
-                                    </div>
-                                </div>
-                                
-                            </div>
+                <div className="col-lg-6">
+                    <div className="card">
+                        <div className="title center">{this.props.specialty}</div>
+                        <div className="features">
+                            <table className="table table-borderless">
+                                <tbody>
+                                    {this.props.priceList.map((service, i) => (
+                                        <tr key={'service_' + i}>
+                                            <td>{service.name}</td>
+                                            <td className="right">{(typeof service.price === 'number') ? `$${service.price}` : service.price}</td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>

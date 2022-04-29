@@ -91,7 +91,10 @@ export class Services extends React.Component {
                                         <h2>Services</h2>
                                     </div>
                                     <div className="col-md-8 offset-md-2">
-                                        <ServiceList barberingPriceList={barberingPriceList} cosmetologyPriceList={cosmetologyPriceList} />
+                                        <div className="row">
+                                            <ServiceList priceList={barberingPriceList} specialty='Barbering' />
+                                            <ServiceList priceList={cosmetologyPriceList} specialty='Cosmetology' />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
