@@ -34,7 +34,7 @@ export class Team extends React.Component {
                 college: 'Somerset Community College',
                 school: 'School of Cosmetology',
                 graduation: '2019',
-                teamImg: 'https://via.placeholder.com/500'
+                teamImg: '/img/team/chelsea.jpg'
             },
             {
                 name: 'Mistaya Watson',
@@ -50,13 +50,13 @@ export class Team extends React.Component {
                 college: 'Medical Career & Technical College',
                 school: 'School of Medical Massage Therapy',
                 graduation: '2022',
-                teamImg: 'https://via.placeholder.com/500'
+                teamImg: '/img/team/kasey.jpg'
             }
         ];
         return (
             <>
             <section className="team">
-                <div className="container-fluid">
+                <div className="container-fluid team-container">
                     <div className="title text-center">
                         <h2>Our Specialized Team</h2>
                     </div>
