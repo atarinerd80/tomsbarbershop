@@ -10,7 +10,7 @@ export class Team extends React.Component {
                 college: 'Campbellsville University',
                 school: 'School of Barbering',
                 graduation: '2019',
-                teamImg: 'https://via.placeholder.com/500'
+                teamImg: '/img/team/thomas.jpg'
             },
             {
                 name: 'Zach Richardson',
@@ -18,7 +18,7 @@ export class Team extends React.Component {
                 college: 'Campbellsville University',
                 school: 'School of Barbering',
                 graduation: '2020',
-                teamImg: 'https://via.placeholder.com/500'
+                teamImg: '/img/team/zach.jpg'
             },
             {
                 name: 'Sheralee Warinner',
@@ -26,7 +26,7 @@ export class Team extends React.Component {
                 college: 'Somerset Community College',
                 school: 'School of Cosmetology',
                 graduation: '2019',
-                teamImg: 'https://via.placeholder.com/500'
+                teamImg: '/img/team/sheralee.jpg'
             },
             {
                 name: 'Chelsea Strunk',
@@ -42,7 +42,7 @@ export class Team extends React.Component {
                 college: 'Somerset Community College',
                 school: 'School of Cosmetology',
                 graduation: '2022',
-                teamImg: 'https://via.placeholder.com/500'
+                teamImg: '/img/team/mistaya.jpg'
             },
             {
                 name: 'Kasey Slagle',
@@ -55,15 +55,15 @@ export class Team extends React.Component {
         ];
         return (
             <>
-            <section className='team'>
-                <div className='container-fluid padding-0'>
-                    <div className='title text-center'>
+            <section className="team">
+                <div className="container-fluid">
+                    <div className="title text-center">
                         <h2>Our Specialized Team</h2>
                     </div>
-                    <div class="container">
-                        <div class="row padding-0">
-                        {team.map((member) => (
-                            <TeamMember member={member} />
+                    <div className="container">
+                        <div className="row padding-0">
+                        {team.map((member, i) => (
+                            <TeamMember key={'team_' + i} member={member} />
                         ))}
                         </div>
                     </div>

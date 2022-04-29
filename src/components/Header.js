@@ -6,10 +6,10 @@ export class Header extends React.Component {
     const logo = 'https://imageprocessor.digital.vistaprint.com/crop/120,239,960x722/maxWidth/1000/https://www.vistaprint.com/preview/image.aspx?image_type=upload&image_token=2162204213-6e09c409c4-3121eb&png=1';
     return (
       <>
-        <header className='hero-area th-fullpage' style={{ backgroundImage: `url(${backgroundImgPath})` }}>
-          <div className='container'>
-            <div className='row'>
-              <div className='col-md-6'>
+        <header className="hero-area th-fullpage" style={{ backgroundImage: `url(${backgroundImgPath})` }}>
+          <div className="container">
+            <div className="row">
+              <div className="col-md-6">
                 <img src={logo}/>
               </div>
             </div>
