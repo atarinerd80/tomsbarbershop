@@ -3,7 +3,7 @@ import ServiceList from './ServiceList';
 
 export class Services extends React.Component {
     render() {
-        const priceList = [
+        const barberingPriceList = [
             {
                 name: 'Men\'s Haircut',
                 price: 18
@@ -21,7 +21,7 @@ export class Services extends React.Component {
                 price: 20
             },
             {
-                name: 'COMBO: Haircut & Beard Trim (No Razor)',
+                name: 'COMBO: Haircut & Beard Trim',
                 price: 25
             },
             {
@@ -36,6 +36,13 @@ export class Services extends React.Component {
                 name: 'Wax Service',
                 price: 'Starting at $5'
             },
+            {
+                name: 'Facial Massage',
+                price: 'Starting at $60'
+            }
+        ];
+
+        const cosmetologyPriceList = [
             {
                 name: 'Woman\'s Dry Cut',
                 price: 15
@@ -71,7 +78,7 @@ export class Services extends React.Component {
             {
                 name: 'Lash Extensions',
                 price: 'Variable'
-            },
+            }
         ];
         return (
             <>
@@ -84,7 +91,7 @@ export class Services extends React.Component {
                                         <h2>Services</h2>
                                     </div>
                                     <div className="col-md-8 offset-md-2">
-                                        <ServiceList priceList={priceList} />
+                                        <ServiceList barberingPriceList={barberingPriceList} cosmetologyPriceList={cosmetologyPriceList} />
                                     </div>
                                 </div>
                             </div>
