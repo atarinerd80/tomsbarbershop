@@ -1,5 +1,5 @@
 import React from 'react';
-import GoogleMapComponent from './GoogleMapComponent';
+import GoogleMapComponent from '../components/GoogleMapComponent';
 
 export class Contact extends React.Component {
     render() {

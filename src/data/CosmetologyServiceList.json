@@ -1,0 +1,40 @@
+{
+    "cosmetologyServices": [
+        {
+            "name": "Woman's Dry Cut",
+            "price": 15
+        },
+        {
+            "name": "Woman's Cut & Style",
+            "price": 20
+        },
+        {
+            "name": "Woman's Shampoo, Cut, & Style",
+            "price": 30
+        },
+        {
+            "name": "Woman's Formal Hair",
+            "price": "Variable"
+        },
+        {
+            "name": "Chemical Service",
+            "price": "Variable"
+        },
+        {
+            "name": "Deep Conditioning Treatment",
+            "price": 45
+        },
+        {
+            "name": "Braids",
+            "price": 10
+        },
+        {
+            "name": "Facial Massage",
+            "price": "Starting at $60"
+        },
+        {
+            "name": "Lash Extensions",
+            "price": "Variable"
+        }
+    ]
+}

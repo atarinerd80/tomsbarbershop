@@ -1,6 +1,6 @@
 import React from 'react';
 
-export class ServiceList extends React.Component {
+export class ServiceTable extends React.Component {
     render() {
         return(
             <>
@@ -25,4 +25,4 @@ export class ServiceList extends React.Component {
         );
     }
 }
-export default ServiceList;
+export default ServiceTable;
