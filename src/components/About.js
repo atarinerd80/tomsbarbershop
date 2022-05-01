@@ -3,7 +3,6 @@ import React from 'react';
 export class About extends React.Component {
     render() {
         const bookingLink = 'https://squareup.com/appointments/book/9hnineu11w65qq/LQ3EXB6ZWBERF/services';
-        const aboutImg = 'https://imageprocessor.digital.vistaprint.com/crop/0,0,4705x3333/maxWidth/1000/https://stockservice.digital.vistaprint.com/02dff8f4da794e95933845b4bc78bbe7.jpg';
         return (
             <>
             <section className="case-study">
@@ -31,7 +30,7 @@ export class About extends React.Component {
                         </div>
                         <div className="col-md-6 d-none d-lg-block">
                             <div className="img-content">
-                                <img className="img-responsive" src={ aboutImg } alt="" />
+                                <img className="img-responsive" src="/img/about-image.jpg" alt="" />
                             </div>
                         </div>
                     </div>
